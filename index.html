@@ -374,48 +374,6 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
-            <!-- ── SÉPARATEUR PRO ── -->
-            <div class="col-span-1 md:col-span-2 lg:col-span-3 reveal">
-                <div class="flex items-center gap-4">
-                    <div class="h-px flex-1" style="background:rgba(255,255,255,0.06);"></div>
-                    <span class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
-                          style="background:rgba(59,130,246,0.1);color:#60a5fa;border:1px solid rgba(59,130,246,0.2);">
-                        🏢 Professionnel · Alternance AIR12
-                    </span>
-                    <div class="h-px flex-1" style="background:rgba(255,255,255,0.06);"></div>
-                </div>
-            </div>
-
-            <!-- App Parking — large card -->
-            <div class="lg:col-span-2 p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(59,130,246,0.2);">
-                <div class="flex items-start justify-between mb-4">
-                    <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:rgba(59,130,246,0.1);">🅿️</div>
-                    <span class="text-xs px-2.5 py-1 rounded-full" style="background:rgba(59,130,246,0.1);color:#60a5fa;border:1px solid rgba(59,130,246,0.2);">Mission entreprise · 3 ans</span>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2">Application de gestion de parking</h3>
-                <p class="text-slate-400 text-sm leading-relaxed mb-5">
-                    Application desktop complète développée pour l'Aéroport Rodez-Aveyron. Gestion des entrées/sorties véhicules,
-                    calcul automatique de la facturation, génération de reçus et tableau de bord de suivi. Remplacement d'un processus
-                    manuel chronophage — problématique métier réelle résolue de bout en bout (analyse, développement, déploiement).
-                    ~2 500 lignes, packaging PyInstaller, suite de tests Pytest.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-5">
-                    <span class="tech-tag px-2.5 py-1 rounded text-xs">Python</span>
-                    <span class="tech-tag px-2.5 py-1 rounded text-xs">PyQt6</span>
-                    <span class="tech-tag px-2.5 py-1 rounded text-xs">MySQL</span>
-                    <span class="tech-tag px-2.5 py-1 rounded text-xs">Pytest / TDD</span>
-                    <span class="tech-tag px-2.5 py-1 rounded text-xs">PyInstaller</span>
-                    <span class="tech-tag px-2.5 py-1 rounded text-xs">XML</span>
-                </div>
-            </div>
-
-            <!-- ── SÉPARATEUR PERSO ── (placeholder col pour aligner la grille) -->
-            <div class="lg:col-span-1 hidden lg:flex items-center justify-center reveal">
-                <div class="p-5 rounded-2xl text-center w-full" style="background:rgba(30,41,59,0.3);border:1px dashed rgba(255,255,255,0.06);">
-                    <p class="text-slate-600 text-xs">Mission principale<br>Alternance 3iL</p>
-                </div>
-            </div>
-
             <!-- ── SÉPARATEUR PROJETS PERSO ── -->
             <div class="col-span-1 md:col-span-2 lg:col-span-3 pt-2 reveal">
                 <div class="flex items-center gap-4">
@@ -428,8 +386,46 @@
                 </div>
             </div>
 
-            <!-- IronTrack -->
-            <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(16,185,129,0.15);">
+            <!-- Capot — flagship full-width card -->
+            <div class="lg:col-span-3 p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(251,146,60,0.25);">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0" style="background:rgba(251,146,60,0.1);">🚗</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white leading-tight">Capot</h3>
+                            <p class="text-slate-500 text-xs mt-0.5">Suivi d'entretien automobile · Swift, SwiftUI, SwiftData · iOS 18+</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <span class="text-xs px-2.5 py-1 rounded-full" style="background:rgba(251,146,60,0.1);color:#fb923c;border:1px solid rgba(251,146,60,0.2);">iOS App</span>
+                        <span class="text-xs px-2.5 py-1 rounded-full" style="background:rgba(251,146,60,0.08);color:#fdba74;border:1px solid rgba(251,146,60,0.15);">iOS 26 Liquid Glass</span>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-5">
+                    Application hors-ligne sans compte utilisateur pour ne jamais rater un entretien véhicule.
+                    Garage multi-véhicules, 20+ types d'entretien prédéfinis adaptés à la motorisation, algorithme
+                    de scoring d'urgence en temps réel, estimation prédictive des prochaines échéances et export PDF.
+                </p>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 mb-5 text-sm">
+                    <div class="flex gap-2 text-slate-400"><span class="text-orange-400 shrink-0">▸</span>Garage multi-véhicules (marque, modèle, carburant, couleur)</div>
+                    <div class="flex gap-2 text-slate-400"><span class="text-orange-400 shrink-0">▸</span>Scoring d'urgence : ok / bientôt / urgent / dépassé</div>
+                    <div class="flex gap-2 text-slate-400"><span class="text-orange-400 shrink-0">▸</span>Intervalles km + mois, adaptés au type de motorisation</div>
+                    <div class="flex gap-2 text-slate-400"><span class="text-orange-400 shrink-0">▸</span>Estimation prédictive basée sur km annuel moyen</div>
+                    <div class="flex gap-2 text-slate-400"><span class="text-orange-400 shrink-0">▸</span>Export PDF des fiches d'entretien</div>
+                    <div class="flex gap-2 text-slate-400"><span class="text-orange-400 shrink-0">▸</span>Notifications locales avant chaque échéance</div>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(251,146,60,0.1);border:1px solid rgba(251,146,60,0.2);color:#fdba74;">Swift</span>
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(251,146,60,0.1);border:1px solid rgba(251,146,60,0.2);color:#fdba74;">SwiftUI</span>
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(251,146,60,0.1);border:1px solid rgba(251,146,60,0.2);color:#fdba74;">SwiftData</span>
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(251,146,60,0.1);border:1px solid rgba(251,146,60,0.2);color:#fdba74;">MVVM</span>
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(251,146,60,0.1);border:1px solid rgba(251,146,60,0.2);color:#fdba74;">XcodeGen</span>
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(251,146,60,0.1);border:1px solid rgba(251,146,60,0.2);color:#fdba74;">Tests unitaires</span>
+                </div>
+            </div>
+
+            <!-- IronTrack — col-2 -->
+            <div class="lg:col-span-2 p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(16,185,129,0.15);">
                 <div class="flex items-start justify-between mb-4">
                     <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:rgba(16,185,129,0.1);">💪</div>
                     <span class="text-xs px-2.5 py-1 rounded-full" style="background:rgba(16,185,129,0.1);color:#34d399;border:1px solid rgba(16,185,129,0.2);">iOS App</span>
@@ -446,7 +442,7 @@
                     <li class="flex gap-2 text-slate-400 text-xs"><span class="text-emerald-400 shrink-0">▸</span>Import/Export CSV · JSON · format propriétaire <code class="text-slate-300">.itworkouts</code></li>
                     <li class="flex gap-2 text-slate-400 text-xs"><span class="text-emerald-400 shrink-0">▸</span>Calculs off-main-thread via <code class="text-slate-300">@ModelActor</code></li>
                 </ul>
-                <div class="flex flex-wrap gap-2 mb-4">
+                <div class="flex flex-wrap gap-2">
                     <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);color:#6ee7b7;">Swift</span>
                     <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);color:#6ee7b7;">SwiftUI</span>
                     <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);color:#6ee7b7;">SwiftData</span>
@@ -457,7 +453,7 @@
                 </div>
             </div>
 
-            <!-- YouTube API -->
+            <!-- YouTube API — col-1 -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
                 <div class="flex items-start justify-between mb-4">
                     <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:rgba(239,68,68,0.1);">📊</div>
@@ -467,54 +463,25 @@
                 <p class="text-slate-400 text-sm leading-relaxed mb-5">
                     Script Python d'automatisation de récupération de données via l'API YouTube. Analyse avec Pandas et export vers dashboards.
                 </p>
-                <div class="flex flex-wrap gap-2 mb-5">
+                <div class="flex flex-wrap gap-2">
                     <span class="tech-tag px-2.5 py-1 rounded text-xs">Python</span>
                     <span class="tech-tag px-2.5 py-1 rounded text-xs">YouTube API</span>
                     <span class="tech-tag px-2.5 py-1 rounded text-xs">Pandas</span>
                 </div>
             </div>
 
-            <!-- Capot — large card -->
-            <div class="lg:col-span-2 p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(251,146,60,0.2);">
-                <div class="flex items-start justify-between mb-4">
-                    <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:rgba(251,146,60,0.1);">🚗</div>
-                    <span class="text-xs px-2.5 py-1 rounded-full" style="background:rgba(251,146,60,0.1);color:#fb923c;border:1px solid rgba(251,146,60,0.2);">iOS App</span>
+            <!-- Home Lab — full-width col-3 -->
+            <div class="lg:col-span-3 p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(139,92,246,0.15);">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0" style="background:rgba(139,92,246,0.1);">🏠</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white leading-tight">Home Lab & Infrastructure personnelle</h3>
+                            <p class="text-slate-500 text-xs mt-0.5">Synology DS224+ · Docker · Home Assistant · HomeKit</p>
+                        </div>
+                    </div>
+                    <span class="text-xs px-2.5 py-1 rounded-full shrink-0" style="background:rgba(139,92,246,0.1);color:#a78bfa;border:1px solid rgba(139,92,246,0.2);">Infrastructure</span>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-1">Capot</h3>
-                <p class="text-slate-500 text-xs mb-3">Application iOS de suivi d'entretien automobile · Swift, SwiftUI, SwiftData · iOS 18+</p>
-                <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                    Application hors-ligne sans compte utilisateur pour ne jamais rater un entretien véhicule.
-                    Garage multi-véhicules, 20+ types d'entretien prédéfinis adaptés à la motorisation, algorithme
-                    de scoring d'urgence en temps réel, estimation prédictive des prochaines échéances et export PDF.
-                </p>
-                <!-- Features grid -->
-                <div class="grid sm:grid-cols-2 gap-2 mb-5 text-sm">
-                    <div class="flex gap-2 text-slate-400"><span class="text-orange-400 shrink-0">▸</span>Garage multi-véhicules (marque, modèle, carburant, couleur)</div>
-                    <div class="flex gap-2 text-slate-400"><span class="text-orange-400 shrink-0">▸</span>Scoring d'urgence : ok / bientôt / urgent / dépassé</div>
-                    <div class="flex gap-2 text-slate-400"><span class="text-orange-400 shrink-0">▸</span>Intervalles km + mois, adaptés au type de motorisation</div>
-                    <div class="flex gap-2 text-slate-400"><span class="text-orange-400 shrink-0">▸</span>Estimation prédictive basée sur km annuel moyen</div>
-                    <div class="flex gap-2 text-slate-400"><span class="text-orange-400 shrink-0">▸</span>Export PDF des fiches d'entretien</div>
-                    <div class="flex gap-2 text-slate-400"><span class="text-orange-400 shrink-0">▸</span>Notifications locales avant chaque échéance</div>
-                </div>
-                <!-- Tech tags -->
-                <div class="flex flex-wrap gap-2 mb-5">
-                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(251,146,60,0.1);border:1px solid rgba(251,146,60,0.2);color:#fdba74;">Swift</span>
-                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(251,146,60,0.1);border:1px solid rgba(251,146,60,0.2);color:#fdba74;">SwiftUI</span>
-                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(251,146,60,0.1);border:1px solid rgba(251,146,60,0.2);color:#fdba74;">SwiftData</span>
-                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(251,146,60,0.1);border:1px solid rgba(251,146,60,0.2);color:#fdba74;">MVVM</span>
-                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(251,146,60,0.1);border:1px solid rgba(251,146,60,0.2);color:#fdba74;">XcodeGen</span>
-                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(251,146,60,0.1);border:1px solid rgba(251,146,60,0.2);color:#fdba74;">Tests unitaires</span>
-                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(251,146,60,0.1);border:1px solid rgba(251,146,60,0.2);color:#fdba74;">iOS 26 Liquid Glass</span>
-                </div>
-            </div>
-
-            <!-- Home Lab — large card -->
-            <div class="lg:col-span-2 p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(139,92,246,0.15);">
-                <div class="flex items-start justify-between mb-4">
-                    <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:rgba(139,92,246,0.1);">🏠</div>
-                    <span class="text-xs px-2.5 py-1 rounded-full" style="background:rgba(139,92,246,0.1);color:#a78bfa;border:1px solid rgba(139,92,246,0.2);">Infrastructure</span>
-                </div>
-                <h3 class="text-xl font-bold text-white mb-2">Home Lab & Infrastructure personnelle</h3>
                 <p class="text-slate-400 text-sm leading-relaxed mb-5">
                     Gestion d'un serveur Synology DS224+ (18 Go RAM) sous DSM. Déploiement et orchestration de services via Docker,
                     automatisation des tâches système, gestion des volumes et haute disponibilité. Intégration domotique via Home Assistant et HomeKit.
@@ -952,6 +919,17 @@
                     <div class="flex gap-2 text-slate-400 text-xs"><span class="text-blue-400 shrink-0">▸</span>Packaging PyInstaller — déploiement en un seul exécutable Windows</div>
                 </div>
 
+                <!-- Contraintes techniques -->
+                <div class="p-3 rounded-lg mb-4 text-xs" style="background:rgba(59,130,246,0.04);border:1px solid rgba(59,130,246,0.12);">
+                    <p class="text-blue-400 font-medium uppercase tracking-wide mb-2">Contraintes techniques</p>
+                    <div class="space-y-1 text-slate-400">
+                        <div class="flex gap-2"><span class="text-blue-400 shrink-0">▸</span>Développement solo — analyse, conception, code, tests, déploiement</div>
+                        <div class="flex gap-2"><span class="text-blue-400 shrink-0">▸</span>Environnement Windows uniquement sur ~30 postes, sans accès serveur distant</div>
+                        <div class="flex gap-2"><span class="text-blue-400 shrink-0">▸</span>Fenêtres de maintenance limitées en dehors des horaires de vol</div>
+                        <div class="flex gap-2"><span class="text-blue-400 shrink-0">▸</span>Fichiers XML d'import pouvant contenir des anomalies (entrées sans sortie, doublons) — gestion des cas limites critique</div>
+                    </div>
+                </div>
+
                 <div class="p-3 rounded-lg mb-5 text-xs text-slate-400" style="background:rgba(16,185,129,0.05);border:1px solid rgba(16,185,129,0.15);">
                     <strong class="text-emerald-400">Résultats mesurables :</strong> compilation mensuelle réduite de plusieurs heures à quelques secondes · élimination des erreurs de calcul manuelles · adoption immédiate par l'équipe comptabilité et l'accueil · validation direction en juin 2025
                 </div>
@@ -985,16 +963,59 @@
                 </div>
 
                 <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                    Les aéroports sont des nœuds numériques critiques où transitent des données sensibles en temps réel. Les modèles périmètriques traditionnels ont montré leurs limites face aux cyberattaques modernes. Cette réflexion, fondée sur le <strong class="text-slate-200">NIST SP 800-207</strong> et les publications <strong class="text-slate-200">ANSSI</strong>, analyse comment Zero Trust peut répondre aux menaces internes (Shadow IT, négligences) et externes (ransomware, APT, DDoS).
+                    Les aéroports sont des nœuds numériques critiques où transitent des données sensibles en temps réel. Les modèles périmètriques traditionnels ont montré leurs limites face aux cyberattaques modernes. Cette réflexion, fondée sur le <strong class="text-slate-200">NIST SP 800-207</strong> et les publications <strong class="text-slate-200">ANSSI</strong>, analyse comment Zero Trust peut répondre aux menaces contemporaines.
                 </p>
 
-                <div class="space-y-2 mb-5">
+                <!-- Trois piliers -->
+                <div class="grid grid-cols-3 gap-2 mb-4">
+                    <div class="p-2.5 rounded-lg text-center" style="background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.12);">
+                        <p class="text-red-400 text-xs font-semibold mb-0.5">Vérification</p>
+                        <p class="text-slate-500 text-xs">systématique</p>
+                    </div>
+                    <div class="p-2.5 rounded-lg text-center" style="background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.12);">
+                        <p class="text-red-400 text-xs font-semibold mb-0.5">Moindre</p>
+                        <p class="text-slate-500 text-xs">privilège</p>
+                    </div>
+                    <div class="p-2.5 rounded-lg text-center" style="background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.12);">
+                        <p class="text-red-400 text-xs font-semibold mb-0.5">Supervision</p>
+                        <p class="text-slate-500 text-xs">continue</p>
+                    </div>
+                </div>
+
+                <!-- Paysage des menaces -->
+                <div class="grid sm:grid-cols-2 gap-2 mb-4 text-xs">
+                    <div class="p-2.5 rounded-lg" style="background:rgba(239,68,68,0.04);border:1px solid rgba(239,68,68,0.1);">
+                        <p class="text-red-400 font-medium mb-1.5 uppercase tracking-wide">Menaces externes</p>
+                        <div class="space-y-0.5 text-slate-400">
+                            <div>▸ Ransomware ciblant les systèmes opérationnels</div>
+                            <div>▸ APT (Advanced Persistent Threats)</div>
+                            <div>▸ DDoS sur infrastructure critique</div>
+                            <div>▸ Phishing / spear-phishing du personnel</div>
+                        </div>
+                    </div>
+                    <div class="p-2.5 rounded-lg" style="background:rgba(239,68,68,0.04);border:1px solid rgba(239,68,68,0.1);">
+                        <p class="text-orange-400 font-medium mb-1.5 uppercase tracking-wide">Menaces internes</p>
+                        <div class="space-y-0.5 text-slate-400">
+                            <div>▸ Shadow IT — usages non contrôlés</div>
+                            <div>▸ Erreurs humaines (mauvaises configs)</div>
+                            <div>▸ Malveillance interne ou prestataires</div>
+                            <div>▸ ⅓ des incidents impliquent des tiers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2 mb-4">
                     <p class="text-slate-500 text-xs font-medium uppercase tracking-wide mb-2">Plan d'implémentation progressif (5 phases)</p>
                     <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.0</strong> — Cartographie des systèmes critiques (accès physiques, vols, passagers, vidéosurveillance)</div>
                     <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.1</strong> — MFA généralisé, ZTNA, micro-segmentation réseau, SIEM/XDR, IAM</div>
                     <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.2–3</strong> — Protection des actifs critiques, extension aux systèmes de gestion des vols</div>
-                    <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.4</strong> — Intégration des partenaires tiers via ZTNA (⅓ des incidents impliquent des prestataires)</div>
+                    <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.4</strong> — Intégration des partenaires tiers via ZTNA</div>
                     <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.5</strong> — Isolation stricte IT/OT (pistes, bagages, embarquement)</div>
+                </div>
+
+                <!-- Citation personnelle -->
+                <div class="p-3 rounded-lg mb-4" style="background:rgba(239,68,68,0.04);border-left:3px solid rgba(239,68,68,0.3);">
+                    <p class="text-slate-400 text-xs italic leading-relaxed">"Zero Trust n'est pas un produit qu'on installe — c'est une philosophie organisationnelle. Sans adhésion des équipes et sans refonte des processus métiers, les outils techniques restent des façades. La résistance au changement et les systèmes legacy de plus de 15 ans constituent souvent plus un frein que la technologie elle-même."</p>
                 </div>
 
                 <div class="flex flex-wrap gap-2">
@@ -1006,6 +1027,7 @@
                     <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(239,68,68,0.08);color:#fca5a5;">Micro-segmentation</span>
                     <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(239,68,68,0.08);color:#fca5a5;">IAM</span>
                     <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(239,68,68,0.08);color:#fca5a5;">OT / IT</span>
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(239,68,68,0.08);color:#fca5a5;">SASE</span>
                 </div>
             </div>
 
