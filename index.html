@@ -523,6 +523,71 @@
                 </div>
             </div>
 
+            <!-- Séparateur projets académiques -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3 pt-4 reveal">
+                <div class="flex items-center gap-4">
+                    <div class="h-px flex-1" style="background:rgba(255,255,255,0.06);"></div>
+                    <span class="text-xs font-medium uppercase tracking-widest text-slate-600">Projets académiques</span>
+                    <div class="h-px flex-1" style="background:rgba(255,255,255,0.06);"></div>
+                </div>
+            </div>
+
+            <!-- R&R Passwords -->
+            <div class="lg:col-span-2 p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(239,68,68,0.15);">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:rgba(239,68,68,0.1);">🔐</div>
+                    <div class="flex flex-col items-end gap-1.5">
+                        <span class="text-xs px-2.5 py-1 rounded-full" style="background:rgba(239,68,68,0.1);color:#f87171;border:1px solid rgba(239,68,68,0.2);">DUT S3 · Chef de projet</span>
+                        <span class="text-xs text-slate-600">Client : consultant cybersécurité</span>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-1">R&R Passwords</h3>
+                <p class="text-slate-500 text-xs mb-3">Gestionnaire de mots de passe virtuel · WinDev, HFSQL, cryptographie · Équipe de 4</p>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Outil de stockage sécurisé de mots de passe avec chiffrement, organisation par dossiers et générateur configurable.
+                    Projet réalisé pour un vrai client (consultant en cybersécurité) avec livraison de trois documents professionnels :
+                    cahier des charges, cahier de conception et dossier de programmation.
+                </p>
+                <ul class="space-y-1.5 mb-5">
+                    <li class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span>Authentification par mot de passe maître + verrouillage automatique après inactivité</li>
+                    <li class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span>Générateur de mots de passe configurable (longueur, majuscules, chiffres, caractères spéciaux)</li>
+                    <li class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span>Modèle relationnel : tables Dossier / Mot_de_passe avec jointures SQL, prévention injection</li>
+                    <li class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span>Coordination d'équipe : répartition des rôles (BDD, cryptographie, interface, intégration)</li>
+                </ul>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(239,68,68,0.08);color:#fca5a5;">WinDev</span>
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(239,68,68,0.08);color:#fca5a5;">HFSQL</span>
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(239,68,68,0.08);color:#fca5a5;">Cryptographie</span>
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(239,68,68,0.08);color:#fca5a5;">SQL</span>
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(239,68,68,0.08);color:#fca5a5;">Gestion de projet</span>
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(239,68,68,0.08);color:#fca5a5;">Sécurité</span>
+                </div>
+            </div>
+
+            <!-- Recommandation ML -->
+            <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(99,102,241,0.15);">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:rgba(99,102,241,0.1);">🤖</div>
+                    <span class="text-xs px-2.5 py-1 rounded-full" style="background:rgba(99,102,241,0.1);color:#a5b4fc;border:1px solid rgba(99,102,241,0.2);">DUT S3 · ML</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-1">Système de recommandation</h3>
+                <p class="text-slate-500 text-xs mb-3">Filtrage collaboratif · Python, Pandas, NumPy</p>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Implémentation et comparaison de deux algorithmes de filtrage collaboratif pour systèmes de recommandation musicale.
+                </p>
+                <ul class="space-y-1.5 mb-4">
+                    <li class="flex gap-2 text-slate-400 text-xs"><span class="text-indigo-400 shrink-0">▸</span>Corrélation de Pearson vs similarité Cosinus</li>
+                    <li class="flex gap-2 text-slate-400 text-xs"><span class="text-indigo-400 shrink-0">▸</span>Pearson : biais 0.009 vs Cosinus : 0.014 — meilleure précision démontrée</li>
+                    <li class="flex gap-2 text-slate-400 text-xs"><span class="text-indigo-400 shrink-0">▸</span>Analyse statistique, gestion des valeurs manquantes (NaN)</li>
+                </ul>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(99,102,241,0.08);color:#a5b4fc;">Python</span>
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(99,102,241,0.08);color:#a5b4fc;">Pandas</span>
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(99,102,241,0.08);color:#a5b4fc;">NumPy</span>
+                    <span class="px-2.5 py-1 rounded text-xs" style="background:rgba(99,102,241,0.08);color:#a5b4fc;">Machine Learning</span>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -659,12 +724,23 @@
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(59,130,246,0.1);">🎓</div>
                 <h3 class="font-bold text-white mb-1">Diplôme d'Ingénieur en Informatique</h3>
                 <p class="text-blue-400 text-sm mb-0.5">3iL — Rodez</p>
-                <p class="text-slate-500 text-xs mb-4">09/2022 – 09/2025</p>
-                <ul class="space-y-1.5 text-slate-400 text-sm">
-                    <li>✓ Mention <strong class="text-slate-200">Assez Bien</strong></li>
-                    <li>✓ Cursus en alternance (3 ans)</li>
+                <p class="text-slate-500 text-xs mb-4">09/2022 – 09/2025 · Alternance</p>
+                <ul class="space-y-1.5 text-slate-400 text-sm mb-4">
+                    <li>✓ Mention <strong class="text-slate-200">Assez Bien</strong> — jury validé sans session 3</li>
                     <li>✓ Spé. Infrastructure Réseau & Cybersécurité</li>
+                    <li>✓ Semestre d'échange à l'UQAC (Canada)</li>
                 </ul>
+                <p class="text-slate-500 text-xs font-medium uppercase tracking-wide mb-2">Modules clés</p>
+                <div class="flex flex-wrap gap-1.5">
+                    <span class="px-2 py-0.5 rounded text-xs" style="background:rgba(59,130,246,0.08);color:#93c5fd;">Infrastructure & Cybersécurité</span>
+                    <span class="px-2 py-0.5 rounded text-xs" style="background:rgba(59,130,246,0.08);color:#93c5fd;">Réseaux</span>
+                    <span class="px-2 py-0.5 rounded text-xs" style="background:rgba(59,130,246,0.08);color:#93c5fd;">Shell Linux</span>
+                    <span class="px-2 py-0.5 rounded text-xs" style="background:rgba(59,130,246,0.08);color:#93c5fd;">UNIX / PowerShell</span>
+                    <span class="px-2 py-0.5 rounded text-xs" style="background:rgba(59,130,246,0.08);color:#93c5fd;">IoT</span>
+                    <span class="px-2 py-0.5 rounded text-xs" style="background:rgba(59,130,246,0.08);color:#93c5fd;">Sécurité SI</span>
+                    <span class="px-2 py-0.5 rounded text-xs" style="background:rgba(59,130,246,0.08);color:#93c5fd;">Web & Écoconception</span>
+                    <span class="px-2 py-0.5 rounded text-xs" style="background:rgba(59,130,246,0.08);color:#93c5fd;">Plan d'affaires</span>
+                </div>
             </div>
 
             <!-- UQAC -->
@@ -672,24 +748,32 @@
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(16,185,129,0.1);">🍁</div>
                 <h3 class="font-bold text-white mb-1">Master en Informatique</h3>
                 <p class="text-emerald-400 text-sm mb-0.5">Université du Québec à Chicoutimi</p>
-                <p class="text-slate-500 text-xs mb-4">08/2024 – 12/2024 · Canada</p>
+                <p class="text-slate-500 text-xs mb-4">08/2024 – 12/2024 · Chicoutimi, Canada</p>
                 <ul class="space-y-1.5 text-slate-400 text-sm">
-                    <li>✓ Semestre d'échange international</li>
-                    <li>✓ Expérience à l'étranger</li>
+                    <li>✓ Semestre d'échange international intégré au cursus 3iL</li>
+                    <li>✓ Immersion dans un environnement académique anglophone</li>
+                    <li>✓ Adaptation à un contexte multiculturel</li>
                 </ul>
             </div>
 
             <!-- DUT -->
-            <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
+            <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(245,158,11,0.15);">
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(245,158,11,0.1);">📚</div>
                 <h3 class="font-bold text-white mb-1">DUT Informatique</h3>
                 <p class="text-amber-400 text-sm mb-0.5">IUT Paul Sabatier — Toulouse</p>
-                <p class="text-slate-500 text-xs mb-4">09/2020 – 09/2022</p>
-                <ul class="space-y-1.5 text-slate-400 text-sm">
+                <p class="text-slate-500 text-xs mb-4">09/2020 – 09/2022 · Diplômé nov. 2022</p>
+                <ul class="space-y-1.5 text-slate-400 text-sm mb-4">
                     <li>✓ Algorithmique & structures de données</li>
-                    <li>✓ Développement logiciel</li>
-                    <li>✓ Bases systèmes & réseaux</li>
+                    <li>✓ Machine Learning & systèmes de recommandation</li>
+                    <li>✓ Droit de l'informatique (RGPD, cybercriminalité)</li>
+                    <li>✓ Chef de projet — gestionnaire de mots de passe</li>
                 </ul>
+                <p class="text-slate-500 text-xs font-medium uppercase tracking-wide mb-2">Projets notables</p>
+                <div class="flex flex-wrap gap-1.5">
+                    <span class="px-2 py-0.5 rounded text-xs" style="background:rgba(245,158,11,0.08);color:#fcd34d;">R&R Passwords</span>
+                    <span class="px-2 py-0.5 rounded text-xs" style="background:rgba(245,158,11,0.08);color:#fcd34d;">Filtrage collaboratif ML</span>
+                    <span class="px-2 py-0.5 rounded text-xs" style="background:rgba(245,158,11,0.08);color:#fcd34d;">Stage OMP</span>
+                </div>
             </div>
 
         </div>
