@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damien BUOSI — Ingénieur BI & Data</title>
+    <title>Damien BUOSI - Ingénieur BI & Data</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230a0f1e'/><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2360a5fa'/><stop offset='1' stop-color='%2334d399'/></linearGradient></defs><text x='16' y='22' font-family='system-ui,sans-serif' font-size='14' font-weight='900' fill='url(%23g)' text-anchor='middle'>DB</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,7 +86,6 @@
 </head>
 <body class="font-sans text-slate-100 antialiased">
 
-<!-- ===== NAVIGATION ===== -->
 <nav class="fixed top-0 left-0 right-0 z-50 nav-blur" style="background:rgba(10,15,30,0.85);border-bottom:1px solid rgba(255,255,255,0.06);">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
         <div class="flex items-center justify-between h-16">
@@ -122,19 +121,15 @@
     </div>
 </nav>
 
-<!-- ===== HERO ===== -->
 <section id="accueil" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
 
-    <!-- Background grid -->
     <div class="absolute inset-0 opacity-[0.025]" style="background-image:linear-gradient(rgba(99,102,241,1) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,1) 1px,transparent 1px);background-size:60px 60px;"></div>
 
-    <!-- Glow orbs -->
     <div class="absolute top-1/3 left-1/4 w-96 h-96 rounded-full blur-3xl" style="background:#3b82f6;opacity:0.04;"></div>
     <div class="absolute bottom-1/3 right-1/4 w-64 h-64 rounded-full blur-3xl" style="background:#34d399;opacity:0.04;"></div>
 
     <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative">
 
-        <!-- Status badge -->
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-medium mb-8"
              style="background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.25);color:#34d399;">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -172,7 +167,6 @@
             </a>
         </div>
 
-        <!-- Stats -->
         <div class="grid grid-cols-3 max-w-sm mx-auto gap-8">
             <div class="text-center">
                 <div class="text-3xl font-black gradient-text">3+</div>
@@ -189,14 +183,12 @@
         </div>
     </div>
 
-    <!-- Scroll hint -->
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
         <span class="text-xs text-slate-700">Défiler</span>
         <div class="w-px h-8" style="background:linear-gradient(to bottom,rgba(99,102,241,0.4),transparent);"></div>
     </div>
 </section>
 
-<!-- ===== PROFIL ===== -->
 <section id="profil" class="py-24 px-4 sm:px-6">
     <div class="max-w-6xl mx-auto">
 
@@ -206,10 +198,8 @@
             <div class="section-divider mb-10"></div>
         </div>
 
-        <!-- Ligne 1 : À propos + Infos -->
         <div class="grid lg:grid-cols-3 gap-6 mb-6 reveal">
 
-            <!-- À propos — 2/3 -->
             <div class="lg:col-span-2 p-6 rounded-2xl bento-card" style="background:rgba(30,41,59,0.5);border:1px solid rgba(59,130,246,0.15);">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:rgba(59,130,246,0.1);">
@@ -224,11 +214,10 @@
                     Aujourd'hui Ingénieur BI & Data chez <strong class="text-slate-200">Natera Coopérative Agricole</strong>, j'interviens sur la chaîne complète de la donnée : pipelines <strong class="text-slate-200">ETL/SSIS</strong>, modélisation data warehouse <strong class="text-slate-200">SQL Server / Oracle</strong>, reporting <strong class="text-slate-200">MicroStrategy</strong>. Mon objectif : transformer des données brutes en informations actionnables pour les équipes métier.
                 </p>
                 <p class="text-slate-400 leading-relaxed">
-                    En parallèle, je développe des <strong class="text-slate-200">applications iOS natives</strong> en Swift par passion — Fonte et Capot sont deux projets que je mène de l'idée au déploiement, seul, avec les mêmes exigences qu'en entreprise.
+                    En parallèle, je développe des <strong class="text-slate-200">applications iOS natives</strong> en Swift par passion : Fonte et Capot sont deux projets que je mène de l'idée au déploiement, seul, avec les mêmes exigences qu'en entreprise.
                 </p>
             </div>
 
-            <!-- Infos — 1/3 -->
             <div class="p-6 rounded-2xl bento-card" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:rgba(255,255,255,0.04);">
@@ -247,7 +236,7 @@
                     </div>
                     <div class="flex items-start gap-3">
                         <span class="text-base mt-0.5 shrink-0">📱</span>
-                        <div><p class="text-xs text-slate-500 mb-0.5">Téléphone</p><p class="text-slate-200 text-sm">07 77 68 77 08</p></div>
+                        <div><p class="text-xs text-slate-500 mb-0.5">Téléphone</p><p class="text-slate-200 text-sm">+337 77 68 77 08</p></div>
                     </div>
                     <div class="flex items-start gap-3">
                         <span class="text-base mt-0.5 shrink-0">🇫🇷</span>
@@ -266,10 +255,8 @@
             </div>
         </div>
 
-        <!-- Ligne 2 : Ce que je fais + Sport + Valeurs -->
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
 
-            <!-- Ce que je fais -->
             <div class="p-6 rounded-2xl bento-card" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:rgba(16,185,129,0.1);">
@@ -280,24 +267,23 @@
                 <div class="space-y-2.5">
                     <div class="flex gap-2.5 items-start">
                         <span class="text-blue-400 text-xs mt-1 shrink-0">▸</span>
-                        <p class="text-slate-400 text-sm"><strong class="text-slate-200">BI & Data Engineering</strong> — pipelines ETL, data warehouse, reporting décisionnel</p>
+                        <p class="text-slate-400 text-sm"><strong class="text-slate-200">BI & Data Engineering</strong> : pipelines ETL, data warehouse, reporting décisionnel</p>
                     </div>
                     <div class="flex gap-2.5 items-start">
                         <span class="text-blue-400 text-xs mt-1 shrink-0">▸</span>
-                        <p class="text-slate-400 text-sm"><strong class="text-slate-200">Développement iOS</strong> — applications Swift native, SwiftUI, SwiftData</p>
+                        <p class="text-slate-400 text-sm"><strong class="text-slate-200">Développement iOS</strong> : applications Swift native, SwiftUI, SwiftData</p>
                     </div>
                     <div class="flex gap-2.5 items-start">
                         <span class="text-blue-400 text-xs mt-1 shrink-0">▸</span>
-                        <p class="text-slate-400 text-sm"><strong class="text-slate-200">Cybersécurité</strong> — audits, sécurisation SI, modèle Zero Trust</p>
+                        <p class="text-slate-400 text-sm"><strong class="text-slate-200">Cybersécurité</strong> : audits, sécurisation SI, modèle Zero Trust</p>
                     </div>
                     <div class="flex gap-2.5 items-start">
                         <span class="text-blue-400 text-xs mt-1 shrink-0">▸</span>
-                        <p class="text-slate-400 text-sm"><strong class="text-slate-200">Infrastructure</strong> — réseaux, systèmes, home lab Synology/Docker</p>
+                        <p class="text-slate-400 text-sm"><strong class="text-slate-200">Infrastructure</strong> : réseaux, systèmes, home lab Synology/Docker</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Sport -->
             <div class="p-6 rounded-2xl bento-card" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:rgba(245,158,11,0.1);">
@@ -306,16 +292,15 @@
                     <h3 class="text-base font-semibold text-white">Sport & compétition</h3>
                 </div>
                 <div class="p-3 rounded-xl mb-4" style="background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.15);">
-                    <p class="text-amber-400 text-xs font-semibold uppercase tracking-wide mb-1">🥇 Champion Régional</p>
+                    <p class="text-amber-400 text-xs font-semibold uppercase tracking-wide mb-1">🥇 Champion de France & Régional</p>
                     <p class="text-slate-200 text-sm font-medium">Force Athlétique Senior -99 kg</p>
                     <p class="text-slate-500 text-xs mt-0.5">Nouvelle-Aquitaine · FSGT</p>
                 </div>
                 <p class="text-slate-400 text-sm leading-relaxed">
-                    La force athlétique (squat, développé couché, soulevé de terre) m'a appris la rigueur de la progression structurée — une logique que j'applique aussi dans mon travail et mes projets perso.
+                    La force athlétique (squat, développé couché, soulevé de terre) m'a appris la rigueur de la progression structurée, une logique que j'applique aussi dans mon travail et mes projets perso.
                 </p>
             </div>
 
-            <!-- Valeurs / Soft skills -->
             <div class="p-6 rounded-2xl bento-card" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:rgba(139,92,246,0.1);">
@@ -339,7 +324,6 @@
     </div>
 </section>
 
-<!-- ===== EXPÉRIENCES ===== -->
 <section id="experiences" class="py-24 px-4 sm:px-6" style="background:rgba(15,23,42,0.6);">
     <div class="max-w-6xl mx-auto">
 
@@ -349,12 +333,9 @@
             <div class="section-divider mb-12"></div>
         </div>
 
-        <!-- Timeline -->
         <div class="relative ml-10">
-            <!-- Vertical line -->
             <div class="absolute top-0 bottom-0 w-px" style="left:-33px;background:linear-gradient(to bottom,#3b82f6 0%,rgba(59,130,246,0.15) 85%,transparent 100%);"></div>
 
-            <!-- Natera -->
             <div class="relative timeline-item mb-10 reveal">
                 <div class="p-6 rounded-2xl bento-card" style="background:rgba(30,41,59,0.5);border:1px solid rgba(59,130,246,0.2);">
                     <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
@@ -373,7 +354,7 @@
                         </div>
                     </div>
                     <ul class="space-y-2 mb-5">
-                        <li class="flex gap-2 text-slate-400 text-sm"><span class="text-blue-400 shrink-0 mt-0.5">▸</span>Conception et alimentation de pipelines ETL sous <strong class="text-slate-200">SSIS</strong> : extraction Oracle (UNION ALL multi-tables), transformations, chargement en data warehouse SQL Server — résolution de crashs mémoire, contraintes NULL et désalignements de types.</li>
+                        <li class="flex gap-2 text-slate-400 text-sm"><span class="text-blue-400 shrink-0 mt-0.5">▸</span>Conception et alimentation de pipelines ETL sous <strong class="text-slate-200">SSIS</strong> : extraction Oracle (UNION ALL multi-tables), transformations, chargement en data warehouse SQL Server : résolution de crashs mémoire, contraintes NULL et désalignements de types.</li>
                         <li class="flex gap-2 text-slate-400 text-sm"><span class="text-blue-400 shrink-0 mt-0.5">▸</span>Modélisation et optimisation de tables de faits/dimensions : DDL/DML, index non-clusterisés sur clés de période, gestion des clés primaires composites.</li>
                         <li class="flex gap-2 text-slate-400 text-sm"><span class="text-blue-400 shrink-0 mt-0.5">▸</span>Développement de rapports et tableaux de bord sur <strong class="text-slate-200">MicroStrategy Library</strong> : KPIs sécurité, métriques cumulatives RunningSum avec reset annuel, filtres dynamiques multi-datasets.</li>
                         <li class="flex gap-2 text-slate-400 text-sm"><span class="text-blue-400 shrink-0 mt-0.5">▸</span>Rédaction de CTE et sous-requêtes SQL complexes (Oracle & SQL Server) : agrégations multi-niveaux, calculs de taux d'évolution, compatibilité MSTR.</li>
@@ -391,7 +372,6 @@
                 </div>
             </div>
 
-            <!-- AIR12 -->
             <div class="relative timeline-item mb-10 reveal">
                 <div class="p-6 rounded-2xl bento-card" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
                     <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
@@ -424,13 +404,12 @@
                 </div>
             </div>
 
-            <!-- OMP -->
             <div class="relative timeline-item reveal">
                 <div class="p-6 rounded-2xl bento-card" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
                     <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
                         <div>
                             <h3 class="text-xl font-bold text-white">Stagiaire Informatique</h3>
-                            <p class="text-blue-400 font-medium mt-0.5">CNRS — Centre national de la recherche scientifique</p>
+                            <p class="text-blue-400 font-medium mt-0.5">CNRS - Centre national de la recherche scientifique</p>
                         </div>
                         <div class="text-right shrink-0">
                             <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium"
@@ -454,7 +433,6 @@
     </div>
 </section>
 
-<!-- ===== PROJETS (BENTO GRID) ===== -->
 <section id="projets" class="py-24 px-4 sm:px-6">
     <div class="max-w-6xl mx-auto">
 
@@ -466,7 +444,6 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
-            <!-- ── SÉPARATEUR PROJETS PERSO ── -->
             <div class="col-span-1 md:col-span-2 lg:col-span-3 pt-2 reveal">
                 <div class="flex items-center gap-4">
                     <div class="h-px flex-1" style="background:rgba(255,255,255,0.06);"></div>
@@ -478,7 +455,6 @@
                 </div>
             </div>
 
-            <!-- YouTube API — col-1 -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
                 <div class="flex items-start justify-between mb-4">
                     <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:rgba(239,68,68,0.1);">📊</div>
@@ -495,7 +471,6 @@
                 </div>
             </div>
 
-            <!-- Home Lab — col-2 -->
             <div class="lg:col-span-2 p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(139,92,246,0.15);">
                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
                     <div class="flex items-center gap-3">
@@ -521,7 +496,6 @@
                 </div>
             </div>
 
-            <!-- ── SÉPARATEUR ACADÉMIQUE ── -->
             <div class="col-span-1 md:col-span-2 lg:col-span-3 pt-2 reveal">
                 <div class="flex items-center gap-4">
                     <div class="h-px flex-1" style="background:rgba(255,255,255,0.06);"></div>
@@ -533,7 +507,6 @@
                 </div>
             </div>
 
-            <!-- R&R Passwords -->
             <div class="lg:col-span-2 p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(239,68,68,0.15);">
                 <div class="flex items-start justify-between mb-4">
                     <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:rgba(239,68,68,0.1);">🔐</div>
@@ -565,7 +538,6 @@
                 </div>
             </div>
 
-            <!-- Recommandation ML -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(99,102,241,0.15);">
                 <div class="flex items-start justify-between mb-4">
                     <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:rgba(99,102,241,0.1);">🤖</div>
@@ -578,7 +550,7 @@
                 </p>
                 <ul class="space-y-1.5 mb-4">
                     <li class="flex gap-2 text-slate-400 text-xs"><span class="text-indigo-400 shrink-0">▸</span>Corrélation de Pearson vs similarité Cosinus</li>
-                    <li class="flex gap-2 text-slate-400 text-xs"><span class="text-indigo-400 shrink-0">▸</span>Pearson : biais 0.009 vs Cosinus : 0.014 — meilleure précision démontrée</li>
+                    <li class="flex gap-2 text-slate-400 text-xs"><span class="text-indigo-400 shrink-0">▸</span>Pearson : biais 0.009 vs Cosinus : 0.014 - meilleure précision démontrée</li>
                     <li class="flex gap-2 text-slate-400 text-xs"><span class="text-indigo-400 shrink-0">▸</span>Analyse statistique, gestion des valeurs manquantes (NaN)</li>
                 </ul>
                 <div class="flex flex-wrap gap-2">
@@ -589,7 +561,6 @@
                 </div>
             </div>
 
-            <!-- Gîte Figuiès -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
                 <div class="flex items-start justify-between mb-4">
                     <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:rgba(20,184,166,0.1);">🏡</div>
@@ -614,13 +585,12 @@
                 </div>
             </div>
 
-            <!-- IoT LoRa -->
             <div class="lg:col-span-2 p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(245,158,11,0.15);">
                 <div class="flex items-start justify-between mb-4">
                     <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:rgba(245,158,11,0.1);">📡</div>
                     <span class="text-xs px-2.5 py-1 rounded-full" style="background:rgba(245,158,11,0.1);color:#fcd34d;border:1px solid rgba(245,158,11,0.2);">3iL An.2 · IoT</span>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-1">Capteurs LoRa — Réseau IoT</h3>
+                <h3 class="text-xl font-bold text-white mb-1">Capteurs LoRa - Réseau IoT</h3>
                 <p class="text-slate-500 text-xs mb-3">Embedded C · Arduino Uno · LoRa RF95 · BME280 · Raspberry Pi</p>
                 <p class="text-slate-400 text-sm leading-relaxed mb-4">
                     Développement d'une infrastructure IoT complète : nœuds de capteurs en C embarqué transmettant température, pression et qualité de l'air via LoRa vers une passerelle Raspberry Pi. 17 TPs progressifs couvrant l'ensemble de la chaîne matérielle.
@@ -646,7 +616,6 @@
     </div>
 </section>
 
-<!-- ===== APPLICATIONS iOS ===== -->
 <section id="apps" class="py-24 px-4 sm:px-6">
     <div class="max-w-6xl mx-auto">
 
@@ -656,10 +625,8 @@
             <div class="section-divider mb-12"></div>
         </div>
 
-        <!-- ── Fonte ── -->
         <div class="flex flex-col lg:flex-row gap-10 items-start mb-20 reveal">
 
-            <!-- Screenshots placeholder -->
             <div class="shrink-0 w-full lg:w-72 flex gap-3 justify-center">
                 <div class="flex-1 rounded-2xl flex items-center justify-center" style="height:420px;background:rgba(16,185,129,0.03);border:1px dashed rgba(16,185,129,0.2);">
                     <p class="text-xs text-slate-600 text-center px-4">Screenshots<br>à venir</p>
@@ -669,7 +636,6 @@
                 </div>
             </div>
 
-            <!-- Description -->
             <div class="flex-1">
                 <div class="flex items-center gap-4 mb-6">
                     <img src="assets/icons/fonte-icon.png" alt="Fonte" class="w-16 h-16 rounded-2xl" style="box-shadow:0 8px 24px rgba(0,0,0,0.4);">
@@ -679,7 +645,7 @@
                     </div>
                 </div>
                 <p class="text-slate-400 leading-relaxed mb-6">
-                    Application iOS <strong class="text-slate-200">local-first</strong> de suivi de séances de musculation. Conçue pour être rapide, sans compte et sans connexion — seules les données comptent. ~14 700 lignes de code, 28 fichiers Swift.
+                    Application iOS <strong class="text-slate-200">local-first</strong> de suivi de séances de musculation. Conçue pour être rapide, sans compte et sans connexion : seules les données comptent. ~14 700 lignes de code, 28 fichiers Swift.
                 </p>
                 <div class="space-y-3 mb-6">
                     <div class="flex gap-3 items-start">
@@ -723,13 +689,10 @@
             </div>
         </div>
 
-        <!-- Séparateur -->
         <div class="h-px mb-24" style="background:linear-gradient(to right,transparent,rgba(255,255,255,0.06),transparent);"></div>
 
-        <!-- ── Capot ── -->
         <div class="flex flex-col lg:flex-row-reverse gap-10 items-start reveal">
 
-            <!-- Screenshots placeholder -->
             <div class="shrink-0 w-full lg:w-72 flex gap-3 justify-center">
                 <div class="flex-1 rounded-2xl flex items-center justify-center" style="height:420px;background:rgba(251,146,60,0.03);border:1px dashed rgba(251,146,60,0.2);">
                     <p class="text-xs text-slate-600 text-center px-4">Screenshots<br>à venir</p>
@@ -739,7 +702,6 @@
                 </div>
             </div>
 
-            <!-- Description -->
             <div class="flex-1">
                 <div class="flex items-center gap-4 mb-6">
                     <img src="assets/icons/capot-icon.png" alt="Capot" class="w-16 h-16 rounded-2xl" style="box-shadow:0 8px 24px rgba(0,0,0,0.4);">
@@ -756,14 +718,14 @@
                         <div class="w-8 h-8 rounded-lg shrink-0 flex items-center justify-center text-sm" style="background:rgba(251,146,60,0.1);">🚗</div>
                         <div>
                             <p class="text-sm font-semibold text-white">Garage multi-véhicules</p>
-                            <p class="text-xs text-slate-500">Marque, modèle, motorisation, couleur — 20+ types d'entretien adaptés au carburant</p>
+                            <p class="text-xs text-slate-500">Marque, modèle, motorisation, couleur : 20+ types d'entretien adaptés au carburant</p>
                         </div>
                     </div>
                     <div class="flex gap-3 items-start">
                         <div class="w-8 h-8 rounded-lg shrink-0 flex items-center justify-center text-sm" style="background:rgba(251,146,60,0.1);">🔴</div>
                         <div>
                             <p class="text-sm font-semibold text-white">Scoring d'urgence</p>
-                            <p class="text-xs text-slate-500">Algorithme temps réel : OK · Bientôt · Urgent · Dépassé — basé sur km + date</p>
+                            <p class="text-xs text-slate-500">Algorithme temps réel : OK · Bientôt · Urgent · Dépassé - basé sur km + date</p>
                         </div>
                     </div>
                     <div class="flex gap-3 items-start">
@@ -777,7 +739,7 @@
                         <div class="w-8 h-8 rounded-lg shrink-0 flex items-center justify-center text-sm" style="background:rgba(251,146,60,0.1);">🔔</div>
                         <div>
                             <p class="text-sm font-semibold text-white">Notifications locales</p>
-                            <p class="text-xs text-slate-500">Alertes avant chaque échéance — entièrement local, aucune donnée envoyée</p>
+                            <p class="text-xs text-slate-500">Alertes avant chaque échéance - entièrement local, aucune donnée envoyée</p>
                         </div>
                     </div>
                 </div>
@@ -795,7 +757,6 @@
     </div>
 </section>
 
-<!-- ===== COMPÉTENCES ===== -->
 <section id="competences" class="py-24 px-4 sm:px-6" style="background:rgba(15,23,42,0.6);">
     <div class="max-w-6xl mx-auto">
 
@@ -807,7 +768,6 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
-            <!-- BI & BDD -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(59,130,246,0.2);">
                 <div class="w-10 h-10 rounded-lg flex items-center justify-center text-xl mb-4" style="background:rgba(59,130,246,0.1);">🗄️</div>
                 <h3 class="font-semibold text-white mb-3">Bases de données & BI</h3>
@@ -823,7 +783,6 @@
                 </div>
             </div>
 
-            <!-- Développement -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
                 <div class="w-10 h-10 rounded-lg flex items-center justify-center text-xl mb-4" style="background:rgba(16,185,129,0.1);">💻</div>
                 <h3 class="font-semibold text-white mb-3">Développement</h3>
@@ -839,7 +798,6 @@
                 </div>
             </div>
 
-            <!-- Réseaux -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
                 <div class="w-10 h-10 rounded-lg flex items-center justify-center text-xl mb-4" style="background:rgba(245,158,11,0.1);">🌐</div>
                 <h3 class="font-semibold text-white mb-3">Réseaux & Systèmes</h3>
@@ -854,7 +812,6 @@
                 </div>
             </div>
 
-            <!-- Cybersécurité -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
                 <div class="w-10 h-10 rounded-lg flex items-center justify-center text-xl mb-4" style="background:rgba(239,68,68,0.1);">🔐</div>
                 <h3 class="font-semibold text-white mb-3">Cybersécurité</h3>
@@ -865,7 +822,6 @@
                 </div>
             </div>
 
-            <!-- Outils -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
                 <div class="w-10 h-10 rounded-lg flex items-center justify-center text-xl mb-4" style="background:rgba(139,92,246,0.1);">🛠️</div>
                 <h3 class="font-semibold text-white mb-3">Outils & DevOps</h3>
@@ -880,7 +836,6 @@
                 </div>
             </div>
 
-            <!-- Langues -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(255,255,255,0.06);">
                 <div class="w-10 h-10 rounded-lg flex items-center justify-center text-xl mb-4" style="background:rgba(6,182,212,0.1);">🌍</div>
                 <h3 class="font-semibold text-white mb-3">Langues</h3>
@@ -910,7 +865,6 @@
     </div>
 </section>
 
-<!-- ===== FORMATION ===== -->
 <section id="formation" class="py-24 px-4 sm:px-6">
     <div class="max-w-6xl mx-auto">
 
@@ -922,11 +876,10 @@
 
         <div class="grid md:grid-cols-3 gap-4">
 
-            <!-- 3iL -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(59,130,246,0.2);">
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(59,130,246,0.1);">🎓</div>
                 <h3 class="font-bold text-white mb-1">Diplôme d'Ingénieur en Informatique</h3>
-                <p class="text-blue-400 text-sm mb-0.5">3iL Ingénieurs — Rodez</p>
+                <p class="text-blue-400 text-sm mb-0.5">3iL Ingénieurs - Rodez</p>
                 <p class="text-slate-500 text-xs mb-3">09/2022 – 09/2025 · Alternance · Mention Assez Bien</p>
                 <div class="flex flex-wrap gap-1.5 mb-4">
                     <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs" style="background:rgba(59,130,246,0.08);color:#93c5fd;">🎤 Délégué de classe</span>
@@ -970,32 +923,31 @@
                 </div>
             </div>
 
-            <!-- UQAC -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(16,185,129,0.15);">
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(16,185,129,0.1);">🍁</div>
-                <h3 class="font-bold text-white mb-1">Semestre d'échange — Informatique</h3>
+                <h3 class="font-bold text-white mb-1">Semestre d'échange - Informatique</h3>
                 <p class="text-emerald-400 text-sm mb-0.5">Université du Québec à Chicoutimi</p>
                 <p class="text-slate-500 text-xs mb-4">08/2024 – 12/2024 · Canada · Intégré cursus 3iL</p>
 
                 <div class="space-y-2 mb-4">
                     <div class="flex gap-2 text-xs">
                         <span class="text-emerald-400 shrink-0 mt-0.5">▸</span>
-                        <div><strong class="text-slate-200">8INF919 — ML pour données massives</strong><br>
+                        <div><strong class="text-slate-200">8INF919 - ML pour données massives</strong><br>
                         <span class="text-slate-500">Deep learning, Spark, MapReduce, domain adaptation non supervisée</span></div>
                     </div>
                     <div class="flex gap-2 text-xs">
                         <span class="text-emerald-400 shrink-0 mt-0.5">▸</span>
-                        <div><strong class="text-slate-200">8INF855 — Intelligence d'affaires</strong><br>
+                        <div><strong class="text-slate-200">8INF855 - Intelligence d'affaires</strong><br>
                         <span class="text-slate-500">Cubes BI, tableaux de bord, automatisation décisionnelle, cas HBS</span></div>
                     </div>
                     <div class="flex gap-2 text-xs">
                         <span class="text-emerald-400 shrink-0 mt-0.5">▸</span>
-                        <div><strong class="text-slate-200">8INF803 — Bases de données réparties</strong><br>
+                        <div><strong class="text-slate-200">8INF803 - Bases de données réparties</strong><br>
                         <span class="text-slate-500">Réplication, cohérence, architectures distribuées</span></div>
                     </div>
                     <div class="flex gap-2 text-xs">
                         <span class="text-emerald-400 shrink-0 mt-0.5">▸</span>
-                        <div><strong class="text-slate-200">8INF865 — Programmation mobile</strong><br>
+                        <div><strong class="text-slate-200">8INF865 - Programmation mobile</strong><br>
                         <span class="text-slate-500">Développement applications Android & iOS</span></div>
                     </div>
                 </div>
@@ -1009,17 +961,16 @@
                 </div>
             </div>
 
-            <!-- DUT -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(245,158,11,0.15);">
                 <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(245,158,11,0.1);">📚</div>
                 <h3 class="font-bold text-white mb-1">DUT Informatique</h3>
-                <p class="text-amber-400 text-sm mb-0.5">IUT Paul Sabatier — Toulouse</p>
+                <p class="text-amber-400 text-sm mb-0.5">IUT Paul Sabatier - Toulouse</p>
                 <p class="text-slate-500 text-xs mb-4">09/2020 – 09/2022 · Diplômé nov. 2022</p>
                 <ul class="space-y-1.5 text-slate-400 text-sm mb-4">
                     <li>✓ Algorithmique & structures de données</li>
                     <li>✓ Machine Learning & systèmes de recommandation</li>
                     <li>✓ Droit de l'informatique (RGPD, cybercriminalité)</li>
-                    <li>✓ Chef de projet — gestionnaire de mots de passe</li>
+                    <li>✓ Chef de projet - gestionnaire de mots de passe</li>
                 </ul>
                 <p class="text-slate-500 text-xs font-medium uppercase tracking-wide mb-2">Projets notables</p>
                 <div class="flex flex-wrap gap-1.5">
@@ -1033,7 +984,6 @@
     </div>
 </section>
 
-<!-- ===== MÉMOIRE ===== -->
 <section id="memoire" class="py-24 px-4 sm:px-6" style="background:rgba(15,23,42,0.6);">
     <div class="max-w-6xl mx-auto">
 
@@ -1042,11 +992,10 @@
             <h2 class="text-3xl sm:text-4xl font-bold text-white mb-2">Mémoire d'ingénieur</h2>
             <div class="section-divider mb-6"></div>
             <p class="text-slate-400 text-sm leading-relaxed max-w-3xl mb-10">
-                Le mémoire de fin d'études 3iL se compose de deux volets complémentaires : une <strong class="text-slate-200">mission entreprise</strong> — réalisation concrète menée en alternance — et un <strong class="text-slate-200">sujet de réflexion</strong> sur une problématique technique ou organisationnelle contemporaine.
+                Le mémoire de fin d'études 3iL se compose de deux volets complémentaires : une <strong class="text-slate-200">mission entreprise</strong> (réalisation concrète menée en alternance) et un <strong class="text-slate-200">sujet de réflexion</strong> sur une problématique technique ou organisationnelle contemporaine.
             </p>
         </div>
 
-        <!-- Stats clés -->
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10 reveal">
             <div class="p-4 rounded-xl text-center" style="background:rgba(30,41,59,0.5);border:1px solid rgba(59,130,246,0.15);">
                 <div class="text-2xl font-black gradient-text">~2 500</div>
@@ -1068,12 +1017,11 @@
 
         <div class="grid lg:grid-cols-2 gap-6">
 
-            <!-- Partie 1 : Mission entreprise -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(59,130,246,0.2);">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-10 h-10 rounded-lg flex items-center justify-center text-xl shrink-0" style="background:rgba(59,130,246,0.1);">🅿️</div>
                     <div>
-                        <p class="text-xs text-slate-500 uppercase tracking-wide font-medium">Partie 1 — Mission entreprise</p>
+                        <p class="text-xs text-slate-500 uppercase tracking-wide font-medium">Partie 1 - Mission entreprise</p>
                         <h3 class="text-lg font-bold text-white leading-tight">Application de gestion de la facturation des parkings</h3>
                         <p class="text-blue-400 text-xs mt-0.5">Aéroport Rodez-Aveyron · janv. – sept. 2025</p>
                     </div>
@@ -1090,17 +1038,16 @@
                     <div class="flex gap-2 text-slate-400 text-xs"><span class="text-blue-400 shrink-0">▸</span>Génération de factures PDF et états récapitulatifs exportables</div>
                     <div class="flex gap-2 text-slate-400 text-xs"><span class="text-blue-400 shrink-0">▸</span>Historique filtrable par société et période, totaux calculés à la volée</div>
                     <div class="flex gap-2 text-slate-400 text-xs"><span class="text-blue-400 shrink-0">▸</span>Module admin sécurisé (auth login/mot de passe, config BDD sans code)</div>
-                    <div class="flex gap-2 text-slate-400 text-xs"><span class="text-blue-400 shrink-0">▸</span>Packaging PyInstaller — déploiement en un seul exécutable Windows</div>
+                    <div class="flex gap-2 text-slate-400 text-xs"><span class="text-blue-400 shrink-0">▸</span>Packaging PyInstaller - déploiement en un seul exécutable Windows</div>
                 </div>
 
-                <!-- Contraintes techniques -->
                 <div class="p-3 rounded-lg mb-4 text-xs" style="background:rgba(59,130,246,0.04);border:1px solid rgba(59,130,246,0.12);">
                     <p class="text-blue-400 font-medium uppercase tracking-wide mb-2">Contraintes techniques</p>
                     <div class="space-y-1 text-slate-400">
-                        <div class="flex gap-2"><span class="text-blue-400 shrink-0">▸</span>Développement solo — analyse, conception, code, tests, déploiement</div>
+                        <div class="flex gap-2"><span class="text-blue-400 shrink-0">▸</span>Développement solo : analyse, conception, code, tests, déploiement</div>
                         <div class="flex gap-2"><span class="text-blue-400 shrink-0">▸</span>Environnement Windows uniquement sur ~30 postes, sans accès serveur distant</div>
                         <div class="flex gap-2"><span class="text-blue-400 shrink-0">▸</span>Fenêtres de maintenance limitées en dehors des horaires de vol</div>
-                        <div class="flex gap-2"><span class="text-blue-400 shrink-0">▸</span>Fichiers XML d'import pouvant contenir des anomalies (entrées sans sortie, doublons) — gestion des cas limites critique</div>
+                        <div class="flex gap-2"><span class="text-blue-400 shrink-0">▸</span>Fichiers XML d'import pouvant contenir des anomalies (entrées sans sortie, doublons) : gestion des cas limites critique</div>
                     </div>
                 </div>
 
@@ -1120,17 +1067,15 @@
                 </div>
             </div>
 
-            <!-- Partie 2 : Réflexion Zero Trust -->
             <div class="p-6 rounded-2xl bento-card reveal" style="background:rgba(30,41,59,0.5);border:1px solid rgba(239,68,68,0.15);">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-10 h-10 rounded-lg flex items-center justify-center text-xl shrink-0" style="background:rgba(239,68,68,0.1);">🔒</div>
                     <div>
-                        <p class="text-xs text-slate-500 uppercase tracking-wide font-medium">Partie 2 — Sujet de réflexion</p>
+                        <p class="text-xs text-slate-500 uppercase tracking-wide font-medium">Partie 2 - Sujet de réflexion</p>
                         <h3 class="text-lg font-bold text-white leading-tight">Implémentation du modèle Zero Trust en environnement aéroportuaire</h3>
                     </div>
                 </div>
 
-                <!-- Problématique -->
                 <div class="p-3 rounded-lg mb-5" style="background:rgba(239,68,68,0.05);border-left:3px solid rgba(239,68,68,0.4);">
                     <p class="text-xs text-slate-500 font-medium uppercase tracking-wide mb-1">Problématique</p>
                     <p class="text-slate-300 text-sm italic">"Comment le modèle Zero Trust peut-il renforcer la sécurité des systèmes d'information d'un aéroport face aux menaces internes et externes croissantes ?"</p>
@@ -1140,7 +1085,6 @@
                     Les aéroports sont des nœuds numériques critiques où transitent des données sensibles en temps réel. Les modèles périmètriques traditionnels ont montré leurs limites face aux cyberattaques modernes. Cette réflexion, fondée sur le <strong class="text-slate-200">NIST SP 800-207</strong> et les publications <strong class="text-slate-200">ANSSI</strong>, analyse comment Zero Trust peut répondre aux menaces contemporaines.
                 </p>
 
-                <!-- Trois piliers -->
                 <div class="grid grid-cols-3 gap-2 mb-4">
                     <div class="p-2.5 rounded-lg text-center" style="background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.12);">
                         <p class="text-red-400 text-xs font-semibold mb-0.5">Vérification</p>
@@ -1156,7 +1100,6 @@
                     </div>
                 </div>
 
-                <!-- Paysage des menaces -->
                 <div class="grid sm:grid-cols-2 gap-2 mb-4 text-xs">
                     <div class="p-2.5 rounded-lg" style="background:rgba(239,68,68,0.04);border:1px solid rgba(239,68,68,0.1);">
                         <p class="text-red-400 font-medium mb-1.5 uppercase tracking-wide">Menaces externes</p>
@@ -1170,7 +1113,7 @@
                     <div class="p-2.5 rounded-lg" style="background:rgba(239,68,68,0.04);border:1px solid rgba(239,68,68,0.1);">
                         <p class="text-orange-400 font-medium mb-1.5 uppercase tracking-wide">Menaces internes</p>
                         <div class="space-y-0.5 text-slate-400">
-                            <div>▸ Shadow IT — usages non contrôlés</div>
+                            <div>▸ Shadow IT - usages non contrôlés</div>
                             <div>▸ Erreurs humaines (mauvaises configs)</div>
                             <div>▸ Malveillance interne ou prestataires</div>
                             <div>▸ ⅓ des incidents impliquent des tiers</div>
@@ -1180,16 +1123,15 @@
 
                 <div class="space-y-2 mb-4">
                     <p class="text-slate-500 text-xs font-medium uppercase tracking-wide mb-2">Plan d'implémentation progressif (5 phases)</p>
-                    <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.0</strong> — Cartographie des systèmes critiques (accès physiques, vols, passagers, vidéosurveillance)</div>
-                    <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.1</strong> — MFA généralisé, ZTNA, micro-segmentation réseau, SIEM/XDR, IAM</div>
-                    <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.2–3</strong> — Protection des actifs critiques, extension aux systèmes de gestion des vols</div>
-                    <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.4</strong> — Intégration des partenaires tiers via ZTNA</div>
-                    <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.5</strong> — Isolation stricte IT/OT (pistes, bagages, embarquement)</div>
+                    <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.0</strong> : Cartographie des systèmes critiques (accès physiques, vols, passagers, vidéosurveillance)</div>
+                    <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.1</strong> : MFA généralisé, ZTNA, micro-segmentation réseau, SIEM/XDR, IAM</div>
+                    <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.2–3</strong> : Protection des actifs critiques, extension aux systèmes de gestion des vols</div>
+                    <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.4</strong> : Intégration des partenaires tiers via ZTNA</div>
+                    <div class="flex gap-2 text-slate-400 text-xs"><span class="text-red-400 shrink-0">▸</span><strong class="text-slate-300">Ph.5</strong> : Isolation stricte IT/OT (pistes, bagages, embarquement)</div>
                 </div>
 
-                <!-- Citation personnelle -->
                 <div class="p-3 rounded-lg mb-4" style="background:rgba(239,68,68,0.04);border-left:3px solid rgba(239,68,68,0.3);">
-                    <p class="text-slate-400 text-xs italic leading-relaxed">"Zero Trust n'est pas un produit qu'on installe — c'est une philosophie organisationnelle. Sans adhésion des équipes et sans refonte des processus métiers, les outils techniques restent des façades. La résistance au changement et les systèmes legacy de plus de 15 ans constituent souvent plus un frein que la technologie elle-même."</p>
+                    <p class="text-slate-400 text-xs italic leading-relaxed">"Zero Trust n'est pas un produit qu'on installe, c'est une philosophie organisationnelle. Sans adhésion des équipes et sans refonte des processus métiers, les outils techniques restent des façades. La résistance au changement et les systèmes legacy de plus de 15 ans constituent souvent plus un frein que la technologie elle-même."</p>
                 </div>
 
                 <div class="flex flex-wrap gap-2">
@@ -1209,7 +1151,6 @@
     </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
 <footer style="background:#050812;border-top:1px solid rgba(255,255,255,0.05);">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
         <div class="flex flex-col md:flex-row items-center justify-between gap-8">
@@ -1247,7 +1188,7 @@
 
         </div>
         <div class="mt-8 pt-6 text-center text-xs text-slate-700" style="border-top:1px solid rgba(255,255,255,0.04);">
-            © 2026 Damien BUOSI — Tous droits réservés
+            © 2026 Damien BUOSI - Tous droits réservés
         </div>
     </div>
 </footer>
