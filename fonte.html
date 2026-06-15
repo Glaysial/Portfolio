@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte - Suivi de musculation iOS - Damien BUOSI</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230a0f1e'/><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2360a5fa'/><stop offset='1' stop-color='%2334d399'/></linearGradient></defs><text x='16' y='22' font-family='system-ui,sans-serif' font-size='14' font-weight='900' fill='url(%23g)' text-anchor='middle'>DB</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0f1e; }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #34d399 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-blur {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            background: rgba(10, 15, 30, 0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .bento-card {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .bento-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .screenshot-container {
+            aspect-ratio: 9/19.5;
+            background: #050812;
+            border: 2px solid rgba(16, 185, 129, 0.25);
+            border-radius: 2rem;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-100 antialiased">
+
+<nav class="fixed top-0 left-0 right-0 z-50 nav-blur">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="flex items-center justify-between h-16">
+            <a href="index.html" class="text-lg font-black gradient-text">DB.</a>
+            <a href="index.html#apps" class="text-sm text-slate-400 hover:text-white transition-colors flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                Retour au portfolio
+            </a>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-32 pb-24 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+        
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
+            <img src="assets/icons/fonte-icon.png" alt="Fonte Icon" class="w-32 h-32 rounded-[2rem] shadow-2xl">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl sm:text-6xl font-black text-white mb-4">Fonte</h1>
+                <p class="text-xl text-emerald-400 font-medium">L'application de musculation local-first sans compromis.</p>
+            </div>
+        </div>
+
+        <!-- Screenshots Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-20">
+            <div class="screenshot-container"><img src="assets/Fonte/Entrainement.PNG" class="w-full h-full object-cover"></div>
+            <div class="screenshot-container"><img src="assets/Fonte/Seances.PNG" class="w-full h-full object-cover"></div>
+            <div class="screenshot-container"><img src="assets/Fonte/Progres.PNG" class="w-full h-full object-cover"></div>
+            <div class="screenshot-container"><img src="assets/Fonte/Bibliotheque.PNG" class="w-full h-full object-cover"></div>
+            <div class="screenshot-container"><img src="assets/Fonte/Detail_Seance.PNG" class="w-full h-full object-cover"></div>
+            <div class="screenshot-container"><img src="assets/Fonte/Profil.PNG" class="w-full h-full object-cover"></div>
+            <div class="screenshot-container"><img src="assets/Fonte/Parametres.PNG" class="w-full h-full object-cover"></div>
+        </div>
+
+        <!-- Details -->
+        <div class="grid lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 space-y-8">
+                <section class="p-8 rounded-3xl bento-card">
+                    <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="text-emerald-400">01.</span> Le Concept
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed mb-4">
+                        Fonte est née d'un besoin personnel : une application de musculation qui ne demande ni compte, ni abonnement, ni connexion internet. Une application "Local-First" où vos données restent dans votre téléphone.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        L'interface a été pensée pour être utilisable d'une seule main pendant l'entraînement, avec des zones de contact larges et une navigation fluide entre le repos et l'exercice.
+                    </p>
+                </section>
+
+                <section class="p-8 rounded-3xl bento-card">
+                    <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="text-emerald-400">02.</span> Fonctionnalités Clés
+                    </h2>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="space-y-3">
+                            <h3 class="text-white font-semibold">Dynamic Island</h3>
+                            <p class="text-sm text-slate-500">Timer de repos intégré nativement, visible même quand l'application est en arrière-plan.</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="text-white font-semibold">HealthKit</h3>
+                            <p class="text-sm text-slate-500">Synchronisation complète avec Apple Santé pour le suivi des calories et du rythme cardiaque.</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="text-white font-semibold">Calculs Avancés</h3>
+                            <p class="text-sm text-slate-500">Estimation du 1RM via Epley, volume total de séance et graphiques de progression mensuelle.</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="text-white font-semibold">Export Universel</h3>
+                            <p class="text-sm text-slate-500">Exportez vos données en JSON ou CSV pour les analyser sur Excel ou les importer ailleurs.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="space-y-8">
+                <section class="p-8 rounded-3xl bento-card border-emerald-500/20">
+                    <h2 class="text-xl font-bold text-white mb-6">Stack Technique</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="text-slate-500">Langage</span>
+                            <span class="text-emerald-400 font-mono">Swift</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="text-slate-500">Interface</span>
+                            <span class="text-emerald-400 font-mono">SwiftUI</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="text-slate-500">Persistance</span>
+                            <span class="text-emerald-400 font-mono">SwiftData</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="text-slate-500">Architecture</span>
+                            <span class="text-emerald-400 font-mono">MVVM</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="text-slate-500">Frameworks</span>
+                            <span class="text-emerald-400 font-mono text-right">HealthKit, ActivityKit, WidgetKit</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="p-8 rounded-3xl bento-card bg-emerald-500/5 border-emerald-500/20">
+                    <h2 class="text-xl font-bold text-white mb-4">Statistiques Projet</h2>
+                    <div class="text-3xl font-black text-white mb-1">14 700+</div>
+                    <p class="text-xs text-emerald-500 uppercase tracking-widest font-bold mb-4">Lignes de code</p>
+                    <div class="text-3xl font-black text-white mb-1">28</div>
+                    <p class="text-xs text-emerald-500 uppercase tracking-widest font-bold">Fichiers Swift</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="py-12 border-t border-white/5 text-center text-slate-600 text-xs">
+    © 2026 Damien BUOSI - Portfolio Fonte
+</footer>
+
+</body>
+</html>
