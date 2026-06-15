@@ -46,10 +46,37 @@
             border-radius: 2rem;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .screenshot-container:hover {
+            transform: scale(1.02);
+        }
+        /* Lightbox Style */
+        #lightbox {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(5, 8, 18, 0.95);
+            backdrop-filter: blur(10px);
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+        }
+        #lightbox img {
+            max-height: 90vh;
+            max-width: 90vw;
+            border-radius: 1rem;
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
         }
     </style>
 </head>
 <body class="font-sans text-slate-100 antialiased">
+
+<div id="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img" src="" alt="Enlarged screenshot">
+</div>
 
 <nav class="fixed top-0 left-0 right-0 z-50 nav-blur">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
@@ -76,15 +103,80 @@
         </div>
 
         <!-- Screenshots Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-20">
-            <div class="screenshot-container"><img src="assets/Fonte/Entrainement.PNG" class="w-full h-full object-cover"></div>
-            <div class="screenshot-container"><img src="assets/Fonte/Seances.PNG" class="w-full h-full object-cover"></div>
-            <div class="screenshot-container"><img src="assets/Fonte/Progres.PNG" class="w-full h-full object-cover"></div>
-            <div class="screenshot-container"><img src="assets/Fonte/Bibliotheque.PNG" class="w-full h-full object-cover"></div>
-            <div class="screenshot-container"><img src="assets/Fonte/Detail_Seance.PNG" class="w-full h-full object-cover"></div>
-            <div class="screenshot-container"><img src="assets/Fonte/Profil.PNG" class="w-full h-full object-cover"></div>
-            <div class="screenshot-container"><img src="assets/Fonte/Parametres.PNG" class="w-full h-full object-cover"></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-6 mb-20">
+            <div class="space-y-4">
+                <div class="screenshot-container" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/Fonte/Entrainement.PNG" class="w-full h-full object-cover">
+                </div>
+                <div class="px-1 text-center">
+                    <h3 class="text-white font-bold text-xs">Entraînement Actif</h3>
+                    <p class="text-slate-500 text-[10px] leading-tight mt-1">Interface optimisée pour l'effort avec timer de repos intégré.</p>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="screenshot-container" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/Fonte/Seances.PNG" class="w-full h-full object-cover">
+                </div>
+                <div class="px-1 text-center">
+                    <h3 class="text-white font-bold text-xs">Liste des Séances</h3>
+                    <p class="text-slate-500 text-[10px] leading-tight mt-1">Journal de bord chronologique de toutes vos performances.</p>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="screenshot-container" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/Fonte/Progres.PNG" class="w-full h-full object-cover">
+                </div>
+                <div class="px-1 text-center">
+                    <h3 class="text-white font-bold text-xs">Statistiques</h3>
+                    <p class="text-slate-500 text-[10px] leading-tight mt-1">Visualisation graphique du volume et de la progression PR.</p>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="screenshot-container" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/Fonte/Bibliotheque.PNG" class="w-full h-full object-cover">
+                </div>
+                <div class="px-1 text-center">
+                    <h3 class="text-white font-bold text-xs">Bibliothèque</h3>
+                    <p class="text-slate-500 text-[10px] leading-tight mt-1">Catalogue riche classé par groupes musculaires cibles.</p>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="screenshot-container" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/Fonte/Detail_Seance.PNG" class="w-full h-full object-cover">
+                </div>
+                <div class="px-1 text-center">
+                    <h3 class="text-white font-bold text-xs">Détail Séance</h3>
+                    <p class="text-slate-500 text-[10px] leading-tight mt-1">Analyse approfondie de chaque série et répétition effectuée.</p>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="screenshot-container" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/Fonte/Profil.PNG" class="w-full h-full object-cover">
+                </div>
+                <div class="px-1 text-center">
+                    <h3 class="text-white font-bold text-xs">Profil Athlète</h3>
+                    <p class="text-slate-500 text-[10px] leading-tight mt-1">Gestion des mensurations et calcul automatique du 1RM.</p>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="screenshot-container" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="assets/Fonte/Parametres.PNG" class="w-full h-full object-cover">
+                </div>
+                <div class="px-1 text-center">
+                    <h3 class="text-white font-bold text-xs">Réglages</h3>
+                    <p class="text-slate-500 text-[10px] leading-tight mt-1">Sync HealthKit et outils d'import/export de données.</p>
+                </div>
+            </div>
         </div>
+
+        <script>
+            function openLightbox(src) {
+                const lightbox = document.getElementById('lightbox');
+                const img = document.getElementById('lightbox-img');
+                img.src = src;
+                lightbox.style.display = 'flex';
+            }
+        </script>
 
         <!-- Details -->
         <div class="grid lg:grid-cols-3 gap-8">
@@ -94,10 +186,10 @@
                         <span class="text-emerald-400">01.</span> Le Concept
                     </h2>
                     <p class="text-slate-400 leading-relaxed mb-4">
-                        Fonte est née d'un besoin personnel : une application de musculation qui ne demande ni compte, ni abonnement, ni connexion internet. Une application "Local-First" où vos données restent dans votre téléphone.
+                        Fonte redéfinit l'expérience du suivi de musculation en combinant une philosophie "Local-First" avec une intégration profonde dans l'écosystème Apple. Conçue pour les athlètes exigeants, l'application élimine les frictions : pas de compte, pas de cloud obligatoire, juste une performance brute et une confidentialité totale.
                     </p>
                     <p class="text-slate-400 leading-relaxed">
-                        L'interface a été pensée pour être utilisable d'une seule main pendant l'entraînement, avec des zones de contact larges et une navigation fluide entre le repos et l'exercice.
+                        L'interface, basée sur les principes du "Liquid Glass", offre une immersion visuelle exceptionnelle tout en restant parfaitement ergonomique pour une utilisation intense en salle. En synchronisant nativement les données avec HealthKit et en exploitant les Live Activities, Fonte devient le centre névralgique de votre progression physique, de l'iPhone à l'Apple Watch.
                     </p>
                 </section>
 
@@ -107,20 +199,28 @@
                     </h2>
                     <div class="grid sm:grid-cols-2 gap-6">
                         <div class="space-y-3">
-                            <h3 class="text-white font-semibold">Dynamic Island</h3>
-                            <p class="text-sm text-slate-500">Timer de repos intégré nativement, visible même quand l'application est en arrière-plan.</p>
+                            <h3 class="text-white font-semibold">Live Activities & Dynamic Island</h3>
+                            <p class="text-sm text-slate-500">Timer de repos et suivi de l'exercice en cours via ActivityKit, visible sur l'écran de verrouillage et la Dynamic Island.</p>
                         </div>
                         <div class="space-y-3">
-                            <h3 class="text-white font-semibold">HealthKit</h3>
-                            <p class="text-sm text-slate-500">Synchronisation complète avec Apple Santé pour le suivi des calories et du rythme cardiaque.</p>
+                            <h3 class="text-white font-semibold">Écosystème Apple Watch</h3>
+                            <p class="text-sm text-slate-500">Application Watch native pour piloter sa séance au poignet, synchronisée en temps réel avec l'iPhone via HealthKit.</p>
                         </div>
                         <div class="space-y-3">
-                            <h3 class="text-white font-semibold">Calculs Avancés</h3>
-                            <p class="text-sm text-slate-500">Estimation du 1RM via Epley, volume total de séance et graphiques de progression mensuelle.</p>
+                            <h3 class="text-white font-semibold">Bibliothèque d'Exercices Intelligente</h3>
+                            <p class="text-sm text-slate-500">Catalogue riche avec classification automatique par groupe musculaire et muscles ciblés (primaire/secondaire).</p>
                         </div>
                         <div class="space-y-3">
-                            <h3 class="text-white font-semibold">Export Universel</h3>
-                            <p class="text-sm text-slate-500">Exportez vos données en JSON ou CSV pour les analyser sur Excel ou les importer ailleurs.</p>
+                            <h3 class="text-white font-semibold">Analyse de Performance</h3>
+                            <p class="text-sm text-slate-500">Calcul du 1RM (Epley), suivi du volume de travail, et visualisation graphique des records personnels (PR).</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="text-white font-semibold">Data Management Avancé</h3>
+                            <p class="text-sm text-slate-500">Système complet d'import/export CSV et JSON, avec synchronisation sécurisée et gestion des backups.</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="text-white font-semibold">Expérience Local-First</h3>
+                            <p class="text-sm text-slate-500">Aucun compte requis. Toutes les données sont traitées et stockées localement via SwiftData pour une confidentialité totale.</p>
                         </div>
                     </div>
                 </section>
@@ -132,36 +232,49 @@
                     <ul class="space-y-4">
                         <li class="flex items-center justify-between text-sm">
                             <span class="text-slate-500">Langage</span>
-                            <span class="text-emerald-400 font-mono">Swift</span>
+                            <span class="text-emerald-400 font-mono">Modern Swift 6</span>
                         </li>
                         <li class="flex items-center justify-between text-sm">
-                            <span class="text-slate-500">Interface</span>
-                            <span class="text-emerald-400 font-mono">SwiftUI</span>
+                            <span class="text-slate-500">Framework UI</span>
+                            <span class="text-emerald-400 font-mono">SwiftUI / WatchKit</span>
                         </li>
                         <li class="flex items-center justify-between text-sm">
                             <span class="text-slate-500">Persistance</span>
                             <span class="text-emerald-400 font-mono">SwiftData</span>
                         </li>
                         <li class="flex items-center justify-between text-sm">
-                            <span class="text-slate-500">Architecture</span>
-                            <span class="text-emerald-400 font-mono">MVVM</span>
+                            <span class="text-slate-500">Système</span>
+                            <span class="text-emerald-400 font-mono text-right">HealthKit, ActivityKit</span>
                         </li>
                         <li class="flex items-center justify-between text-sm">
-                            <span class="text-slate-500">Frameworks</span>
-                            <span class="text-emerald-400 font-mono text-right">HealthKit, ActivityKit, WidgetKit</span>
+                            <span class="text-slate-500">Architecture</span>
+                            <span class="text-emerald-400 font-mono">MVVM-C / SwiftUI</span>
                         </li>
                     </ul>
                 </section>
 
                 <section class="p-8 rounded-3xl bento-card bg-emerald-500/5 border-emerald-500/20">
                     <h2 class="text-xl font-bold text-white mb-4">Statistiques Projet</h2>
-                    <div class="text-3xl font-black text-white mb-1">14 700+</div>
+                    <div class="text-3xl font-black text-white mb-1">22 500+</div>
                     <p class="text-xs text-emerald-500 uppercase tracking-widest font-bold mb-4">Lignes de code</p>
-                    <div class="text-3xl font-black text-white mb-1">28</div>
+                    <div class="text-3xl font-black text-white mb-1">45+</div>
                     <p class="text-xs text-emerald-500 uppercase tracking-widest font-bold">Fichiers Swift</p>
                 </section>
             </div>
         </div>
+
+        <!-- Presentation Video -->
+        <section class="mt-20 pt-20 border-t border-white/5">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                <span class="text-emerald-400">#</span> Démo Vidéo
+            </h2>
+            <div class="max-w-xs mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/5 bg-black">
+                <video controls class="w-full aspect-[9/19.5] object-cover">
+                    <source src="assets/Fonte/ScreenRecording_06-15-2026 20-33-45_1.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </div>
+        </section>
     </div>
 </main>
 
